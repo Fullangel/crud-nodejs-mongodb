@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 
 //connecting to db
-mongoose.connect('mongodb://localhost/crud-mongo')
+mongoose.connect('mongodb+srv://Fullangel:Angel140@cluster0.bwtcb.mongodb.net/CrudNodejs?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(db => console.log('db connected'))
     .catch(err => console.log(err));
 
